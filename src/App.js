@@ -2,6 +2,7 @@ import './App.css';
 import Navbar from './Components/Navbar';
 import Home from './Components/Home';
 import About from './Components/About';
+import NoteState from './context-notes/NoteState';
 import {
   BrowserRouter as Router,
   Routes,
@@ -11,6 +12,7 @@ import {
 function App() {
   return (
     <>
+      <NoteState>
       <Router>
         <Navbar />
         <Routes>
@@ -21,7 +23,7 @@ function App() {
          
         </Routes>
       </Router>
-          
+      </NoteState>   
     </>
 );
 }
