@@ -3,6 +3,7 @@ import Navbar from './Components/Navbar';
 import Home from './Components/Home';
 import About from './Components/About';
 import NoteState from './context-notes/NoteState';
+import Alert from './Components/Alert';
 import {
   BrowserRouter as Router,
   Routes,
@@ -15,6 +16,7 @@ function App() {
       <NoteState>
       <Router>
         <Navbar />
+        <Alert message="Welcome to inotebook " />
         <div className="container">
 
         <Routes>
